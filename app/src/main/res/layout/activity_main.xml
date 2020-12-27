@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="20dp"
+        android:textColor="#AA00AA"
+        android:text="請選擇起點："/>
+
+
+    <Button
+        android:id="@+id/ChosePlace"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="3dp"
+        android:text="點選位置"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請選擇終點："
+        android:layout_below="@+id/ChosePlace"
+        android:textColor="#AA00AA"
+        android:textSize="20dp"
+        android:id="@+id/textView2"
+        tools:ignore="UnknownId" />
+
+
+    <Button
+        android:id="@+id/ChosePlace2"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="3dp"
+        android:text="點選位置"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/SearchBtn"
+        android:text="搜尋"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/ChosePlace2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="2dp"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_below="@+id/SearchBtn"
+        android:id="@+id/TextView3"/>
+
+
+</RelativeLayout>
