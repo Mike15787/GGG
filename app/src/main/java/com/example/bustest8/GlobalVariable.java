@@ -48,3 +48,4 @@ public class GlobalVariable extends Application {
         return q;
     }
 }
+

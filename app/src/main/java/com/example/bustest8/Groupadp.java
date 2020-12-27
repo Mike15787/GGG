@@ -12,9 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
 public class Groupadp extends RecyclerView.Adapter<Groupadp.ViewHolder> {
     private Activity activity;
+    private int h=0;
     ArrayList<String> arrayListGroup;
     //Create constructor
     Groupadp(Activity activity,ArrayList<String> arrayListGroup){
@@ -38,12 +38,11 @@ public class Groupadp extends RecyclerView.Adapter<Groupadp.ViewHolder> {
         holder.tvname.setText(arrayListGroup.get(position));
         ArrayList<String> arrayListMember = new ArrayList<>();
 
-        for (int h=0;h<p.length;h++){
-            if (p[h].length!=0){
-                String w = p[h][0];
-                arrayListMember.add(w);//+h 自動組成字串
-            }
+        if (p[h].length!=0){
+            String w = p[h][0];//0 0
+            arrayListMember.add(w);//+h 自動組成字串
         }
+        h+=1;
         MemberAdp adapterMember = new MemberAdp(arrayListMember);
         LinearLayoutManager layoutManagerMember = new LinearLayoutManager(activity);
         holder.rvmember.setLayoutManager(layoutManagerMember);
